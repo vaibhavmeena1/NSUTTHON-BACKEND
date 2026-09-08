@@ -21,7 +21,7 @@ module.exports = {
     client: "pg",
     connection: {
       connectionString: process.env.DATABASE_URL,
-      ssl: { rejectUnauthorized: true }, // Set to true in production
+      ssl: { rejectUnauthorized: false }, // Set to true in production
     },
     pool: {
       min: 2,
